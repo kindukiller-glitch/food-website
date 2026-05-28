@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodie Pizza Hub - Premium Pizza & Burgers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main-style.css" />
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container header-content">
+      <div class="brand">
+        <div class="brand-icon">🍕</div>
+        <h2 class="brand-name">Foodie Pizza Hub</h2>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#order" class="nav-link">Order</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-wrapper">
+        <div class="hero-text animate-on-scroll">
+          <p class="hero-subtitle">Welcome to</p>
+          <h1>Foodie Pizza Hub</h1>
+          <p class="hero-description">Handcrafted pizzas, gourmet burgers, and premium beverages delivered fresh to your doorstep.</p>
+          <a href="#menu" class="btn btn-primary">Order Now</a>
+        </div>
+        <div class="hero-image animate-on-scroll">
+          <div class="pizza-placeholder">
+            <div class="pizza-circle"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p class="section-subtitle">Premium taste since 2015</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card animate-on-scroll">
+            <div class="about-icon">👨‍🍳</div>
+            <h3>Expert Chefs</h3>
+            <p>Our award-winning chefs craft each pizza with passion and precision using only the finest ingredients.</p>
+          </div>
+          <div class="about-card animate-on-scroll">
+            <div class="about-icon">🌱</div>
+            <h3>Fresh Ingredients</h3>
+            <p>We source organic vegetables, imported cheeses, and premium meats from trusted suppliers daily.</p>
+          </div>
+          <div class="about-card animate-on-scroll">
+            <div class="about-icon">⚡</div>
+            <h3>Fast Delivery</h3>
+            <p>Hot, fresh pizzas delivered within 30 minutes. Quality guaranteed or your money back.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p class="section-subtitle">Explore our delicious offerings</p>
+        </div>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="pizza">Pizzas</button>
+          <button class="filter-btn" data-filter="burger">Burgers</button>
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <div class="menu-item animate-on-scroll" data-category="pizza">
+            <div class="item-image pizza-img"></div>
+            <h3>Margherita Special</h3>
+            <p class="item-description">Fresh tomato, mozzarella, basil, olive oil</p>
+            <div class="item-footer">
+              <span class="price">$12.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item animate-on-scroll" data-category="pizza">
+            <div class="item-image pizza-img"></div>
+            <h3>Pepperoni Deluxe</h3>
+            <p class="item-description">Premium pepperoni, mozzarella, tomato sauce</p>
+            <div class="item-footer">
+              <span class="price">$14.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item animate-on-scroll" data-category="pizza">
+            <div class="item-image pizza-img"></div>
+            <h3>Veggie Paradise</h3>
+            <p class="item-description">Bell peppers, mushrooms, onions, olives, spinach</p>
+            <div class="item-footer">
+              <span class="price">$13.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item animate-on-scroll" data-category="pizza">
+            <div class="item-image pizza-img"></div>
+            <h3>BBQ Meat Feast</h3>
+            <p class="item-description">Bacon, sausage, pepperoni, beef, BBQ sauce</p>
+            <div class="item-footer">
+              <span class="price">$16.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item animate-on-scroll" data-category="burger">
+            <div class="item-image burger-img"></div>
+            <h3>Classic Cheeseburger</h3>
+            <p class="item-description">Beef patty, cheddar cheese, lettuce, tomato</p>
+            <div class="item-footer">
+              <span class="price">$10.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item animate-on-scroll" data-category="burger">
+            <div class="item-image burger-img"></div>
+            <h3>Bacon Deluxe Burger</h3>
+            <p class="item-description">Double beef, crispy bacon, Swiss cheese, caramelized onions</p>
+            <div class="item-footer">
+              <span class="price">$13.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item animate-on-scroll" data-category="burger">
+            <div class="item-image burger-img"></div>
+            <h3>Spicy Jalapeño Burger</h3>
+            <p class="item-description">Beef patty, jalapeños, pepper jack, chipotle mayo</p>
+            <div class="item-footer">
+              <span class="price">$11.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item animate-on-scroll" data-category="drinks">
+            <div class="item-image drinks-img"></div>
+            <h3>Coca Cola</h3>
+            <p class="item-description">Classic refreshing cola, ice-cold</p>
+            <div class="item-footer">
+              <span class="price">$2.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item animate-on-scroll" data-category="drinks">
+            <div class="item-image drinks-img"></div>
+            <h3>Fresh Orange Juice</h3>
+            <p class="item-description">100% fresh squeezed orange juice</p>
+            <div class="item-footer">
+              <span class="price">$4.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item animate-on-scroll" data-category="drinks">
+            <div class="item-image drinks-img"></div>
+            <h3>Iced Latte</h3>
+            <p class="item-description">Smooth espresso with cold milk and ice</p>
+            <div class="item-footer">
+              <span class="price">$5.99</span>
+              <button class="btn-small">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Foods</h2>
+          <p class="section-subtitle">Mouth-watering selections</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item animate-on-scroll">
+            <div class="gallery-image pizza-featured"></div>
+            <h3>Supreme Pizza</h3>
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <div class="gallery-image burger-featured"></div>
+            <h3>Gourmet Burger</h3>
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <div class="gallery-image pizza-featured"></div>
+            <h3>Signature Pizza</h3>
+          </div>
+          <div class="gallery-item animate-on-scroll">
+            <div class="gallery-image sandwich-featured"></div>
+            <h3>Premium Sandwich</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Customer Reviews</h2>
+          <p class="section-subtitle">What our happy customers say</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card animate-on-scroll">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The best pizza I've had in years! Fresh ingredients and perfect crust every time."</p>
+            <div class="testimonial-author">
+              <strong>Sarah Johnson</strong>
+              <span>New York</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Fast delivery, hot pizza, amazing taste. Foodie Pizza Hub is my go-to place!"</p>
+            <div class="testimonial-author">
+              <strong>Michael Chen</strong>
+              <span>Los Angeles</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The burgers here are absolutely incredible. Premium quality at great prices."</p>
+            <div class="testimonial-author">
+              <strong>Emma Wilson</strong>
+              <span>Chicago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="container order-wrapper">
+        <div class="order-form animate-on-scroll">
+          <h2>Place Your Order</h2>
+          <form id="orderForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="tel" placeholder="Your Phone" required />
+            <textarea placeholder="Special requests or dietary needs" rows="4"></textarea>
+            <button type="submit" class="btn btn-primary">Complete Order</button>
+            <p class="form-message" id="formMessage"></p>
+          </form>
+        </div>
+
+        <div class="location-info animate-on-scroll">
+          <h2>Visit Us</h2>
+          <div class="info-card">
+            <h3>📍 Location</h3>
+            <p>123 Food Street<br>Downtown Center<br>New York, NY 10001</p>
+          </div>
+          <div class="info-card">
+            <h3>⏰ Hours</h3>
+            <p>Mon - Thu: 11:00 AM - 10:00 PM<br>Fri - Sat: 11:00 AM - 11:00 PM<br>Sunday: 12:00 PM - 9:00 PM</p>
+          </div>
+          <div class="info-card">
+            <h3>📞 Contact</h3>
+            <p>Phone: (555) 123-4567<br>Email: hello@foodiepizzahub.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h4>Foodie Pizza Hub</h4>
+          <p>Premium pizzas and burgers delivered fresh.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Foodie Pizza Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
